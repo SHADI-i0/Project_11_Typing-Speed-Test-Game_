@@ -98,6 +98,12 @@ const lvls = {
     Normal: 5,
     Hard: 4,
 };
+let defaultLevelName = `${select.value}`;
+let defaultLevelSeconds = lvls[defaultLevelName];
+lvlNameSpan.innerHTML = defaultLevelName;
+secondsSpan.innerHTML = defaultLevelSeconds;
+timeLeftSpan.innerHTML = defaultLevelSeconds;
+timeLeftSpan.innerHTML = wordsEasy.length;
 
 select.onchange = function () {
     defaultLevelName = `${select.value}`;
@@ -118,10 +124,6 @@ input.onpaste = function () {
 };
 
 startButton.onclick = function () {
-    if (lvlNameSpan.innerHTML == "") {
-        alert("Please Select One Of The levels !");
-        return false;
-    }
     this.remove();
     input.focus();
     reloaded.style.display = "block";

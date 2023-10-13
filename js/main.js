@@ -103,7 +103,7 @@ let defaultLevelSeconds = lvls[defaultLevelName];
 lvlNameSpan.innerHTML = defaultLevelName;
 secondsSpan.innerHTML = defaultLevelSeconds;
 timeLeftSpan.innerHTML = defaultLevelSeconds;
-timeLeftSpan.innerHTML = wordsEasy.length;
+scoreTotal.innerHTML = wordsEasy.length;
 
 select.onchange = function () {
     defaultLevelName = `${select.value}`;
@@ -160,7 +160,7 @@ function genWords() {
 
 function startPlay() {
     if (scoreGot.innerHTML == 0) {
-        timeLeftSpan.innerHTML = defaultLevelSeconds + 2;
+        timeLeftSpan.innerHTML = defaultLevelSeconds + 3;
     } else {
         timeLeftSpan.innerHTML = defaultLevelSeconds;
     }

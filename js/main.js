@@ -94,9 +94,9 @@ let finishMessage = document.querySelector(".finish");
 let reloaded = document.querySelector(".reloaded");
 
 const lvls = {
-    Easy: 7,
-    Normal: 6,
-    Hard: 5,
+    Easy: 6,
+    Normal: 5,
+    Hard: 4,
 };
 
 select.onchange = function () {

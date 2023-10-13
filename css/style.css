@@ -65,10 +65,12 @@ body {
     font-size: 15px;
     outline: none;
     border: none;
+    color: black;
 }
 
 .select option {
     font-weight: bold;
+    color: black;
 }
 
 .message {

@@ -54,8 +54,6 @@ body {
 
 .select {
     display: inline-block;
-    margin: auto;
-    text-align: center;
     padding: 7px;
     font-weight: bold;
     border-radius: 6px;
